@@ -1,7 +1,11 @@
 <h1>Artists</h1>
 
 <table id="artists">
-  <% @artists.each do |artist| %>
-    <td class="name"><%= artist.name %></td>
-  <% end %>
+  <body>
+    <% @artists.each do |artist| %>
+      <tr>
+        <td class="name"><%= artist.name %></td>
+      </tr>
+    <% end %>
+  </body>
 </table>
