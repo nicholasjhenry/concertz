@@ -40,6 +40,9 @@ group :development, :test do
   gem 'launchy'
   gem 'spring-commands-rspec'
   gem 'simplecov', require: false
+end
+
+group :test do
   gem 'vcr'
   gem 'webmock'
 end
