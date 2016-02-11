@@ -1,4 +1,4 @@
-class Catalog
+class FakeCatalog
   def fetch_artists
     [
       Artist.new(name: "David Bowie"),

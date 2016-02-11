@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   def index
-    catalog = Catalog.new
+    catalog = FakeCatalog.new
     @artists = catalog.fetch_artists
   end
 end
