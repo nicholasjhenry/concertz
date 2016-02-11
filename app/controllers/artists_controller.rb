@@ -1,5 +1,6 @@
 class ArtistsController < ApplicationController
   def index
-    render
+    catalog = Catalog.new
+    @artists = catalog.fetch_artists
   end
 end

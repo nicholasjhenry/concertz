@@ -5,5 +5,7 @@ RSpec.describe "Viewing Artists", type: :feature do
     visit "/"
 
     expect(page).to have_css("#artists")
+    expect(page).to have_css("#artists .name", text: "David Bowie")
+    expect(page).to have_css("#artists .name", text: "Robert Smith")
   end
 end
