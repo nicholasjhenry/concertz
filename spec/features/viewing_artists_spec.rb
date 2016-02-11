@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Viewing Artists", type: :feature do
+RSpec.describe "Viewing Artists", type: :feature, vcr: { cassette_name: "artists" } do
   it "renders a lists of artists" do
     visit "/"
 
